@@ -3,6 +3,9 @@ const {spawn} = require('child_process');
 const app = express()
 const port = 3000
 
+awsKey = `AKIAIOSFODNN7EXAMPLE`
+secret = `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`
+
 app.post('/', (req, res) => {
     try {
         const { url } = req.body
